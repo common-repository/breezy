@@ -1,0 +1,28 @@
+#toplevel_page_breezy .wp-menu-image:before {
+	content: '';
+	background: url('../images/breezy-admin-icon.png') no-repeat center center;
+	background-size: 22px 22px;
+}
+#toplevel_page_breezy.wp-has-current-submenu .wp-menu-image:before {
+	content: '';
+	background: url('../images/breezy-admin-icon-active.png') no-repeat center center;
+	background-size: 22px 22px;
+}	
+#toplevel_page_breezy li.wp-first-item {
+	display: none;
+}
+#wp-admin-bar-breezy a {
+	position: relative;
+}
+#wpadminbar  #wp-admin-bar-breezy > a:before {
+	content: '';
+	background-image: url('../images/breezy-admin-icon.png') !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	position: relative !important;
+	display: block;
+}

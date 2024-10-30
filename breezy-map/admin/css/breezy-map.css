@@ -1,0 +1,475 @@
+a {
+	text-decoration: underline;
+}
+
+p a {
+	text-decoration: underline !important;
+	color: #135e96 !important;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*Styles for UI*/
+.btn-wrapper {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.btn {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #ffffff;
+	background: #0073aa;
+	transition: all 0.3s;
+	border: 1px solid #0073aa;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #0073aa;
+	background: #ffffff;
+}
+
+.notification-wrapper {
+	display: none;
+	position: relative;
+	background: #fcffd7;
+	box-sizing: border-box;
+	padding: 5px 15px;
+}
+
+.notification-wrapper .message {
+	font-weight: bold;
+}
+
+.notification-wrapper .close-btn {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.notification-wrapper.active {
+	display: block;
+}
+
+/* Styles for the admin page tabs */
+#tabs {
+	margin-top: 20px;
+	padding: 0;
+	border-top: none !important;
+	background: unset !important;
+}
+
+#tabs ul {
+	padding: 0;
+	list-style: none;
+	background: unset;
+	border-top: none;
+	border-left: none;
+	display: flex;
+	flex-direction: row;
+}
+
+#tabs li {
+	display: inline;
+	margin-right: 0;
+	background: unset;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+}
+
+#tabs .tab-links a:focus {
+	box-shadow: none;
+}
+
+#tabs li.ui-tabs-active {
+	background: #d7d7d7;
+}
+
+#tabs .tab-links a {
+	text-decoration: none;
+	color: #000000;
+	transition: all 0.3s;
+	box-sizing: border-box;
+	padding: 10px 15px;
+	display: block;
+}
+
+#tabs .ui-tabs-active a {
+	color: #000000;
+	font-weight: bold;
+
+}
+
+#tabs li:hover {
+	background: #d7d7d7;
+}
+
+
+.tabs {
+    margin: 20px;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-links li {
+    display: inline-block;
+	margin-bottom: 0;
+}
+
+.tab-links li.active a {
+    font-weight: bold;
+    color: black;
+	background: #ffffff;
+}
+
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+}
+
+.tab {
+    display: none;
+	border: 1px solid #d4d4d4;
+	background: white;
+}
+
+.tab.active {
+    display: block;
+}
+
+
+
+
+
+#tabs .ui-tabs-panel {
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.tab-inner-nav-wrapper {
+	box-sizing: border-box;
+	padding: 30px 30px 0 30px;
+}
+
+.tab-inner-nav-wrapper h2 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.tab-inner-wrapper {
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+#tab-3 .tab-inner-wrapper p:first-child {
+	margin-top: 0;
+}
+
+.instructions-wrapper {
+	box-sizing: border-box;
+	padding: 20px;
+	background: #f1f1f1;
+	margin-bottom: 50px;
+
+}
+
+.instructions-wrapper h3 {
+	margin-top: 0;
+}
+
+.instructions-wrapper ol {
+	list-style-type: decimal;
+	margin: 20px 0 0 0;
+	padding-left: 0;
+	font-size: 14px;
+}
+
+.instructions-wrapper ol li {
+	margin-bottom: 10px;
+	display: block !important;
+	border: none !important;
+}
+
+.instructions-wrapper ol li:hover {
+	background: unset !important;
+}
+
+.instructions-wrapper ol {
+	counter-reset: list-counter;
+}
+
+.instructions-wrapper ol li::before {
+	counter-increment: list-counter;
+	content: counter(list-counter) ". ";
+	font-weight: bold;
+	color: #000000;
+	margin-right: 10px;
+}
+
+.breezy-map-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 100px;
+	margin-bottom: 50px;
+}
+
+
+.breezy-map-wrapper .left-wrapper {
+	width: 20%;
+}
+
+.breezy-map-wrapper .right-wrapper {
+	width: 80%;
+}
+
+.breezy-map-wrapper .right-wrapper .instruction-msg {
+	margin-top: 0;
+}
+
+.field-wrapper {
+	margin-bottom: 16px;
+}
+
+.field-wrapper input {
+	width: 100%;
+}
+
+.error-message {
+	padding: 8px 0;
+}
+
+/*Markers management*/
+.manage-markers-btn,
+.edit-marker-btn {
+	content: '';
+	background: url('../images/edit-icon.svg') no-repeat;
+	width: 26px;
+	height: 26px;
+	margin: 8px;
+	background-size: contain;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.delete-map-btn,
+.remove-marker-btn {
+	content: '';
+	background: url('../images/delete-icon.svg') no-repeat;
+	width: 26px;
+	height: 26px;
+	margin: 8px;
+	background-size: contain;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.tab-inner-wrapper.marker-parent-wrapper {
+	padding-top: 0;
+
+}
+
+.tab-inner-wrapper.marker-parent-wrapper .tab-inner-nav-wrapper {
+	padding: 0;
+
+}
+
+#marker-form {
+	display: none;
+}
+
+/*Table*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.back-btn {
+	text-decoration: underline !important;
+	cursor: pointer !important;
+	color: blue !important;
+	text-underline-offset: 3px !important;
+	display: block !important;
+	margin-bottom: 30px !important;
+	margin-top: 30px !important;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 15px;
+
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper .left-wrapper {
+	width: 30%;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper .left-wrapper img {
+	width: 100%;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper.one-col-wrapper .left-wrapper {
+	width: 100%;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper.one-col-wrapper .right-wrapper {
+	width: 100%;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper .right-wrapper {
+	width: 70%;
+	box-sizing: border-box;
+}
+
+.breezy-map-marker-info-wrapper .flex-wrapper .right-wrapper h4 {
+	font-size: 16px;
+	margin-top: 0;
+}
+.breezy-map-marker-info-wrapper .flex-wrapper .right-wrapper p {
+	font-size: 14px;
+}
+
+.action-wrapper button {
+	margin-right: 30px;
+}
+
+/*Map table*/
+#maps-table tbody tr td:nth-child(2) {
+	cursor: pointer;
+	position: relative;
+}
+
+#maps-table .copy-shortcode-btn {
+	position: relative;
+}
+
+#maps-table .copy-shortcode-btn:after {
+    content: '';
+    position: absolute;
+	top: -2px;
+    right: -30px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/copy.png) no-repeat;
+    background-size: contain;
+}
+
+.copy-shortcode-btn {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 10%;
+    margin-left: -40px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip-text.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.locate-marker {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+.locate-marker:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/locate.png) no-repeat;
+    background-size: contain;
+}
+
+.marker-title a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: underline !important;
+}
+
+
+
+.map-title-edit-btn {
+	content: '';
+	background: url('../images/edit-icon.svg') no-repeat;
+	width: 26px;
+	height: 26px;
+	margin: 8px;
+	background-size: contain;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.map-title-field-wrapper {
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 15px;
+}
+
+.update-map-title-btn-wrapper {
+	display: none;
+}

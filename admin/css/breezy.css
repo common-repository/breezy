@@ -1,0 +1,220 @@
+a {
+	text-decoration: underline;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*Styles for UI*/
+.btn-wrapper {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.btn {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #ffffff;
+	background: #0073aa;
+	transition: all 0.3s;
+	border: 1px solid #0073aa;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #0073aa;
+	background: #ffffff;
+}
+
+.notification-wrapper {
+	display: none;
+	position: relative;
+	background: #fcffd7;
+	box-sizing: border-box;
+	padding: 5px 15px;
+}
+
+.notification-wrapper .message {
+	font-weight: bold;
+}
+
+.notification-wrapper .close-btn {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.notification-wrapper.active {
+	display: block;
+}
+
+/* Styles for the admin page tabs */
+#tabs {
+	margin-top: 20px;
+	padding: 0;
+	border-top: none !important;
+	background: unset !important;
+}
+
+#tabs ul {
+	padding: 0;
+	list-style: none;
+	background: unset;
+	border-top: none;
+	border-left: none;
+}
+
+#tabs li {
+	display: inline;
+	margin-right: 0;
+	background: unset;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+}
+
+#tabs a:focus {
+	box-shadow: none;
+}
+
+#tabs li.ui-tabs-active {
+	background: #d7d7d7;
+}
+
+#tabs a {
+	text-decoration: none;
+	color: #000000;
+	transition: all 0.3s;
+}
+
+#tabs .ui-tabs-active a {
+	color: #000000;
+	font-weight: bold;
+
+}
+
+#tabs li:hover {
+	background: #d7d7d7;
+}
+
+
+
+#tabs .ui-tabs-panel {
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.tab-inner-nav-wrapper {
+	box-sizing: border-box;
+	padding: 30px 30px 0 30px;
+}
+
+.tab-inner-nav-wrapper h2 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.tab-inner-wrapper {
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+#tab-3 .tab-inner-wrapper p:first-child {
+	margin-top: 0;
+}
+
+.instructions-wrapper {
+	box-sizing: border-box;
+	padding: 20px;
+	background: #f1f1f1;
+	margin-bottom: 50px;
+
+}
+
+.instructions-wrapper h3 {
+	margin-top: 0;
+}
+
+.instructions-wrapper ol {
+	list-style-type: decimal;
+	margin: 20px 0 0 0;
+	padding-left: 0;
+	font-size: 14px;
+}
+
+.instructions-wrapper ol li {
+	margin-bottom: 10px;
+	display: block !important;
+	border: none !important;
+}
+
+.instructions-wrapper ol li:hover {
+	background: unset !important;
+}
+
+.instructions-wrapper ol {
+	counter-reset: list-counter;
+}
+
+.instructions-wrapper ol li::before {
+	counter-increment: list-counter;
+	content: counter(list-counter) ". ";
+	font-weight: bold;
+	color: #000000;
+	margin-right: 10px;
+}
+
+
+.field-wrapper {
+	margin-bottom: 16px;
+}
+
+.field-wrapper input {
+	width: 100%;
+}
+
+.error-message {
+	padding: 8px 0;
+}
+
+
+/*Table*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	vertical-align: middle !important;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.back-btn {
+	text-decoration: underline !important;
+	cursor: pointer !important;
+	color: blue !important;
+	text-underline-offset: 3px !important;
+	display: block !important;
+	margin-bottom: 30px !important;
+	margin-top: 30px !important;
+}
+
+p a {
+	text-decoration: underline;
+	color: #135e96;
+}
